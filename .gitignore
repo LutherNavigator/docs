@@ -1,3 +1,7 @@
+# Other
+.vscode
+*.DS_Store
+
 # Coverage
 docs/coverage/coverage-summary.json
 docs/coverage/badge-branches.svg
