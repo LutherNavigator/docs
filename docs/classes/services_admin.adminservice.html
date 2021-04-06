@@ -137,7 +137,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="services_util.baseservice.html">BaseService</a>.<a href="services_util.baseservice.html#constructor">constructor</a></p>
 								<ul>
-									<li>Defined in services/util.ts:44</li>
+									<li>Defined in services/util.ts:85</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -160,7 +160,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="services_util.baseservice.html">BaseService</a>.<a href="services_util.baseservice.html#dbm">dbm</a></p>
 						<ul>
-							<li>Defined in services/util.ts:44</li>
+							<li>Defined in services/util.ts:85</li>
 						</ul>
 					</aside>
 				</section>
@@ -171,13 +171,13 @@
 					<a name="getposts" class="tsd-anchor"></a>
 					<h3>get<wbr>Posts</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Posts<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/services_post.post.html" class="tsd-signature-type">Post</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Posts<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/services_admin.adminpost.html" class="tsd-signature-type">AdminPost</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in services/admin.ts:50</li>
+									<li>Defined in services/admin.ts:84</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography tsd-comment-shorttext">
@@ -185,7 +185,7 @@
 									<p>Get all posts.</p>
 								</div>
 							</div>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/services_post.post.html" class="tsd-signature-type">Post</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/services_admin.adminpost.html" class="tsd-signature-type">AdminPost</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></h4>
 							<p>All posts in the database.</p>
 						</li>
 					</ul>
@@ -200,7 +200,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in services/admin.ts:20</li>
+									<li>Defined in services/admin.ts:54</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography tsd-comment-shorttext">
@@ -226,13 +226,13 @@
 					<a name="getusers" class="tsd-anchor"></a>
 					<h3>get<wbr>Users</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Users<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/services_user.user.html" class="tsd-signature-type">User</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Users<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/services_admin.adminuser.html" class="tsd-signature-type">AdminUser</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in services/admin.ts:31</li>
+									<li>Defined in services/admin.ts:65</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography tsd-comment-shorttext">
@@ -240,7 +240,7 @@
 									<p>Get all users.</p>
 								</div>
 							</div>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/services_user.user.html" class="tsd-signature-type">User</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/services_admin.adminuser.html" class="tsd-signature-type">AdminUser</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></h4>
 							<p>All users in the database.</p>
 						</li>
 					</ul>
@@ -275,6 +275,12 @@
 					</li>
 				</ul>
 				<ul class="after-current">
+					<li class=" tsd-kind-interface tsd-parent-kind-module root">
+						<a href="../interfaces/services_admin.adminpost.html" class="tsd-kind-icon">Admin<wbr>Post</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-module root">
+						<a href="../interfaces/services_admin.adminuser.html" class="tsd-kind-icon">Admin<wbr>User</a>
+					</li>
 				</ul>
 			</nav>
 		</div>

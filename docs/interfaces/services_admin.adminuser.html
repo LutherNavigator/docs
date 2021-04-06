@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>PostVote | luthernavigator</title>
+	<title>AdminUser | luthernavigator</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -55,10 +55,10 @@
 		<div class="container">
 			<ul class="tsd-breadcrumb">
 				<li>
-					<a href="../modules/services_postvote.html">services/postVote</a>
+					<a href="../modules/services_admin.html">services/admin</a>
 				</li>
 				<li>
-					<a href="services_postvote.postvote.html">PostVote</a>
+					<a href="services_admin.adminuser.html">AdminUser</a>
 				</li>
 			</ul>
 		</div>
@@ -73,23 +73,23 @@
 						<a href="../modules.html">Modules</a>
 					</li>
 					<li class="current tsd-kind-module">
-						<a href="../modules/services_postvote.html">services/postVote</a>
+						<a href="../modules/services_admin.html">services/admin</a>
 					</li>
 				</ul>
 			</nav>
 		</div>
 		<div class="col-7 offset-3 col-content">
-			<h1>Interface PostVote</h1>
+			<h1>Interface AdminUser</h1>
 			<section class="tsd-panel tsd-comment"><div class="tsd-comment tsd-typography tsd-comment-shorttext">
 					<div class="lead">
-						<p>Post vote architecture.</p>
+						<p>Admin user architecture.</p>
 					</div>
 			</div></section>
 			<section class="tsd-panel tsd-hierarchy">
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">PostVote</span>
+						<span class="target">AdminUser</span>
 					</li>
 				</ul>
 			</section>
@@ -99,11 +99,15 @@
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="services_postvote.postvote.html#createtime" class="tsd-kind-icon">create<wbr>Time</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="services_postvote.postvote.html#id" class="tsd-kind-icon">id</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="services_postvote.postvote.html#postid" class="tsd-kind-icon">postID</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="services_postvote.postvote.html#userid" class="tsd-kind-icon">userID</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="services_postvote.postvote.html#votetype" class="tsd-kind-icon">vote<wbr>Type</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="services_admin.adminuser.html#admin" class="tsd-kind-icon">admin</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="services_admin.adminuser.html#approved" class="tsd-kind-icon">approved</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="services_admin.adminuser.html#email" class="tsd-kind-icon">email</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="services_admin.adminuser.html#firstname" class="tsd-kind-icon">firstname</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="services_admin.adminuser.html#jointime" class="tsd-kind-icon">join<wbr>Time</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="services_admin.adminuser.html#lastname" class="tsd-kind-icon">lastname</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="services_admin.adminuser.html#status" class="tsd-kind-icon">status</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="services_admin.adminuser.html#userid" class="tsd-kind-icon">userID</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="services_admin.adminuser.html#verified" class="tsd-kind-icon">verified</a></li>
 							</ul>
 						</section>
 					</div>
@@ -112,32 +116,72 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="createtime" class="tsd-anchor"></a>
-					<h3>create<wbr>Time</h3>
-					<div class="tsd-signature tsd-kind-icon">create<wbr>Time<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<a name="admin" class="tsd-anchor"></a>
+					<h3>admin</h3>
+					<div class="tsd-signature tsd-kind-icon">admin<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in services/postVote.ts:16</li>
+							<li>Defined in services/admin.ts:26</li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="id" class="tsd-anchor"></a>
-					<h3>id</h3>
-					<div class="tsd-signature tsd-kind-icon">id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<a name="approved" class="tsd-anchor"></a>
+					<h3>approved</h3>
+					<div class="tsd-signature tsd-kind-icon">approved<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in services/postVote.ts:12</li>
+							<li>Defined in services/admin.ts:25</li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="postid" class="tsd-anchor"></a>
-					<h3>postID</h3>
-					<div class="tsd-signature tsd-kind-icon">postID<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<a name="email" class="tsd-anchor"></a>
+					<h3>email</h3>
+					<div class="tsd-signature tsd-kind-icon">email<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in services/postVote.ts:14</li>
+							<li>Defined in services/admin.ts:22</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="firstname" class="tsd-anchor"></a>
+					<h3>firstname</h3>
+					<div class="tsd-signature tsd-kind-icon">firstname<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in services/admin.ts:20</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="jointime" class="tsd-anchor"></a>
+					<h3>join<wbr>Time</h3>
+					<div class="tsd-signature tsd-kind-icon">join<wbr>Time<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in services/admin.ts:27</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="lastname" class="tsd-anchor"></a>
+					<h3>lastname</h3>
+					<div class="tsd-signature tsd-kind-icon">lastname<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in services/admin.ts:21</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="status" class="tsd-anchor"></a>
+					<h3>status</h3>
+					<div class="tsd-signature tsd-kind-icon">status<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in services/admin.ts:23</li>
 						</ul>
 					</aside>
 				</section>
@@ -147,17 +191,17 @@
 					<div class="tsd-signature tsd-kind-icon">userID<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in services/postVote.ts:13</li>
+							<li>Defined in services/admin.ts:19</li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="votetype" class="tsd-anchor"></a>
-					<h3>vote<wbr>Type</h3>
-					<div class="tsd-signature tsd-kind-icon">vote<wbr>Type<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<a name="verified" class="tsd-anchor"></a>
+					<h3>verified</h3>
+					<div class="tsd-signature tsd-kind-icon">verified<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in services/postVote.ts:15</li>
+							<li>Defined in services/admin.ts:24</li>
 						</ul>
 					</aside>
 				</section>
@@ -168,27 +212,42 @@
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
 					<li class=" tsd-kind-class tsd-parent-kind-module root">
-						<a href="../classes/services_postvote.postvoteservice.html" class="tsd-kind-icon">Post<wbr>Vote<wbr>Service</a>
+						<a href="../classes/services_admin.adminservice.html" class="tsd-kind-icon">Admin<wbr>Service</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-module root">
+						<a href="services_admin.adminpost.html" class="tsd-kind-icon">Admin<wbr>Post</a>
 					</li>
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-interface tsd-parent-kind-module root">
-						<a href="services_postvote.postvote.html" class="tsd-kind-icon">Post<wbr>Vote</a>
+						<a href="services_admin.adminuser.html" class="tsd-kind-icon">Admin<wbr>User</a>
 						<ul>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="services_postvote.postvote.html#createtime" class="tsd-kind-icon">create<wbr>Time</a>
+								<a href="services_admin.adminuser.html#admin" class="tsd-kind-icon">admin</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="services_postvote.postvote.html#id" class="tsd-kind-icon">id</a>
+								<a href="services_admin.adminuser.html#approved" class="tsd-kind-icon">approved</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="services_postvote.postvote.html#postid" class="tsd-kind-icon">postID</a>
+								<a href="services_admin.adminuser.html#email" class="tsd-kind-icon">email</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="services_postvote.postvote.html#userid" class="tsd-kind-icon">userID</a>
+								<a href="services_admin.adminuser.html#firstname" class="tsd-kind-icon">firstname</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="services_postvote.postvote.html#votetype" class="tsd-kind-icon">vote<wbr>Type</a>
+								<a href="services_admin.adminuser.html#jointime" class="tsd-kind-icon">join<wbr>Time</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="services_admin.adminuser.html#lastname" class="tsd-kind-icon">lastname</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="services_admin.adminuser.html#status" class="tsd-kind-icon">status</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="services_admin.adminuser.html#userid" class="tsd-kind-icon">userID</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="services_admin.adminuser.html#verified" class="tsd-kind-icon">verified</a>
 							</li>
 						</ul>
 					</li>
