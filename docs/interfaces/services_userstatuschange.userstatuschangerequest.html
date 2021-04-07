@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>UserStatusChange | luthernavigator</title>
+	<title>UserStatusChangeRequest | luthernavigator</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -58,7 +58,7 @@
 					<a href="../modules/services_userstatuschange.html">services/userStatusChange</a>
 				</li>
 				<li>
-					<a href="services_userstatuschange.userstatuschange.html">UserStatusChange</a>
+					<a href="services_userstatuschange.userstatuschangerequest.html">UserStatusChangeRequest</a>
 				</li>
 			</ul>
 		</div>
@@ -79,17 +79,17 @@
 			</nav>
 		</div>
 		<div class="col-7 offset-3 col-content">
-			<h1>Interface UserStatusChange</h1>
+			<h1>Interface UserStatusChangeRequest</h1>
 			<section class="tsd-panel tsd-comment"><div class="tsd-comment tsd-typography tsd-comment-shorttext">
 					<div class="lead">
-						<p>User status change architecture.</p>
+						<p>User status change requests architecture.</p>
 					</div>
 			</div></section>
 			<section class="tsd-panel tsd-hierarchy">
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">UserStatusChange</span>
+						<span class="target">UserStatusChangeRequest</span>
 					</li>
 				</ul>
 			</section>
@@ -99,10 +99,13 @@
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="services_userstatuschange.userstatuschange.html#createtime" class="tsd-kind-icon">create<wbr>Time</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="services_userstatuschange.userstatuschange.html#id" class="tsd-kind-icon">id</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="services_userstatuschange.userstatuschange.html#newstatusid" class="tsd-kind-icon">new<wbr>StatusID</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="services_userstatuschange.userstatuschange.html#userid" class="tsd-kind-icon">userID</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="services_userstatuschange.userstatuschangerequest.html#email" class="tsd-kind-icon">email</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="services_userstatuschange.userstatuschangerequest.html#firstname" class="tsd-kind-icon">firstname</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="services_userstatuschange.userstatuschangerequest.html#lastname" class="tsd-kind-icon">lastname</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="services_userstatuschange.userstatuschangerequest.html#newstatus" class="tsd-kind-icon">new<wbr>Status</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="services_userstatuschange.userstatuschangerequest.html#requestid" class="tsd-kind-icon">requestID</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="services_userstatuschange.userstatuschangerequest.html#status" class="tsd-kind-icon">status</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="services_userstatuschange.userstatuschangerequest.html#userid" class="tsd-kind-icon">userID</a></li>
 							</ul>
 						</section>
 					</div>
@@ -111,32 +114,62 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="createtime" class="tsd-anchor"></a>
-					<h3>create<wbr>Time</h3>
-					<div class="tsd-signature tsd-kind-icon">create<wbr>Time<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<a name="email" class="tsd-anchor"></a>
+					<h3>email</h3>
+					<div class="tsd-signature tsd-kind-icon">email<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in services/userStatusChange.ts:15</li>
+							<li>Defined in services/userStatusChange.ts:32</li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="id" class="tsd-anchor"></a>
-					<h3>id</h3>
-					<div class="tsd-signature tsd-kind-icon">id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<a name="firstname" class="tsd-anchor"></a>
+					<h3>firstname</h3>
+					<div class="tsd-signature tsd-kind-icon">firstname<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in services/userStatusChange.ts:12</li>
+							<li>Defined in services/userStatusChange.ts:30</li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="newstatusid" class="tsd-anchor"></a>
-					<h3>new<wbr>StatusID</h3>
-					<div class="tsd-signature tsd-kind-icon">new<wbr>StatusID<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<a name="lastname" class="tsd-anchor"></a>
+					<h3>lastname</h3>
+					<div class="tsd-signature tsd-kind-icon">lastname<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in services/userStatusChange.ts:14</li>
+							<li>Defined in services/userStatusChange.ts:31</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="newstatus" class="tsd-anchor"></a>
+					<h3>new<wbr>Status</h3>
+					<div class="tsd-signature tsd-kind-icon">new<wbr>Status<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in services/userStatusChange.ts:34</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="requestid" class="tsd-anchor"></a>
+					<h3>requestID</h3>
+					<div class="tsd-signature tsd-kind-icon">requestID<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in services/userStatusChange.ts:35</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="status" class="tsd-anchor"></a>
+					<h3>status</h3>
+					<div class="tsd-signature tsd-kind-icon">status<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in services/userStatusChange.ts:33</li>
 						</ul>
 					</aside>
 				</section>
@@ -146,7 +179,7 @@
 					<div class="tsd-signature tsd-kind-icon">userID<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in services/userStatusChange.ts:13</li>
+							<li>Defined in services/userStatusChange.ts:29</li>
 						</ul>
 					</aside>
 				</section>
@@ -159,30 +192,39 @@
 					<li class=" tsd-kind-class tsd-parent-kind-module root">
 						<a href="../classes/services_userstatuschange.userstatuschangeservice.html" class="tsd-kind-icon">User<wbr>Status<wbr>Change<wbr>Service</a>
 					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-module root">
+						<a href="services_userstatuschange.userstatuschange.html" class="tsd-kind-icon">User<wbr>Status<wbr>Change</a>
+					</li>
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-interface tsd-parent-kind-module root">
-						<a href="services_userstatuschange.userstatuschange.html" class="tsd-kind-icon">User<wbr>Status<wbr>Change</a>
+						<a href="services_userstatuschange.userstatuschangerequest.html" class="tsd-kind-icon">User<wbr>Status<wbr>Change<wbr>Request</a>
 						<ul>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="services_userstatuschange.userstatuschange.html#createtime" class="tsd-kind-icon">create<wbr>Time</a>
+								<a href="services_userstatuschange.userstatuschangerequest.html#email" class="tsd-kind-icon">email</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="services_userstatuschange.userstatuschange.html#id" class="tsd-kind-icon">id</a>
+								<a href="services_userstatuschange.userstatuschangerequest.html#firstname" class="tsd-kind-icon">firstname</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="services_userstatuschange.userstatuschange.html#newstatusid" class="tsd-kind-icon">new<wbr>StatusID</a>
+								<a href="services_userstatuschange.userstatuschangerequest.html#lastname" class="tsd-kind-icon">lastname</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="services_userstatuschange.userstatuschange.html#userid" class="tsd-kind-icon">userID</a>
+								<a href="services_userstatuschange.userstatuschangerequest.html#newstatus" class="tsd-kind-icon">new<wbr>Status</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="services_userstatuschange.userstatuschangerequest.html#requestid" class="tsd-kind-icon">requestID</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="services_userstatuschange.userstatuschangerequest.html#status" class="tsd-kind-icon">status</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="services_userstatuschange.userstatuschangerequest.html#userid" class="tsd-kind-icon">userID</a>
 							</li>
 						</ul>
 					</li>
 				</ul>
 				<ul class="after-current">
-					<li class=" tsd-kind-interface tsd-parent-kind-module root">
-						<a href="services_userstatuschange.userstatuschangerequest.html" class="tsd-kind-icon">User<wbr>Status<wbr>Change<wbr>Request</a>
-					</li>
 				</ul>
 			</nav>
 		</div>

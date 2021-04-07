@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>UserStatusChange | luthernavigator</title>
+	<title>AdminPost | luthernavigator</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -55,10 +55,10 @@
 		<div class="container">
 			<ul class="tsd-breadcrumb">
 				<li>
-					<a href="../modules/services_userstatuschange.html">services/userStatusChange</a>
+					<a href="../modules/services_admin.html">services/admin</a>
 				</li>
 				<li>
-					<a href="services_userstatuschange.userstatuschange.html">UserStatusChange</a>
+					<a href="services_admin.adminpost.html">AdminPost</a>
 				</li>
 			</ul>
 		</div>
@@ -73,23 +73,23 @@
 						<a href="../modules.html">Modules</a>
 					</li>
 					<li class="current tsd-kind-module">
-						<a href="../modules/services_userstatuschange.html">services/userStatusChange</a>
+						<a href="../modules/services_admin.html">services/admin</a>
 					</li>
 				</ul>
 			</nav>
 		</div>
 		<div class="col-7 offset-3 col-content">
-			<h1>Interface UserStatusChange</h1>
+			<h1>Interface AdminPost</h1>
 			<section class="tsd-panel tsd-comment"><div class="tsd-comment tsd-typography tsd-comment-shorttext">
 					<div class="lead">
-						<p>User status change architecture.</p>
+						<p>Admin post architecture.</p>
 					</div>
 			</div></section>
 			<section class="tsd-panel tsd-hierarchy">
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">UserStatusChange</span>
+						<span class="target">AdminPost</span>
 					</li>
 				</ul>
 			</section>
@@ -99,10 +99,14 @@
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="services_userstatuschange.userstatuschange.html#createtime" class="tsd-kind-icon">create<wbr>Time</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="services_userstatuschange.userstatuschange.html#id" class="tsd-kind-icon">id</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="services_userstatuschange.userstatuschange.html#newstatusid" class="tsd-kind-icon">new<wbr>StatusID</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="services_userstatuschange.userstatuschange.html#userid" class="tsd-kind-icon">userID</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="services_admin.adminpost.html#adminfavorite" class="tsd-kind-icon">admin<wbr>Favorite</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="services_admin.adminpost.html#approved" class="tsd-kind-icon">approved</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="services_admin.adminpost.html#createtime" class="tsd-kind-icon">create<wbr>Time</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="services_admin.adminpost.html#location" class="tsd-kind-icon">location</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="services_admin.adminpost.html#postid" class="tsd-kind-icon">postID</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="services_admin.adminpost.html#postuser" class="tsd-kind-icon">post<wbr>User</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="services_admin.adminpost.html#program" class="tsd-kind-icon">program</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="services_admin.adminpost.html#rating" class="tsd-kind-icon">rating</a></li>
 							</ul>
 						</section>
 					</div>
@@ -111,42 +115,82 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="adminfavorite" class="tsd-anchor"></a>
+					<h3>admin<wbr>Favorite</h3>
+					<div class="tsd-signature tsd-kind-icon">admin<wbr>Favorite<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in services/admin.ts:41</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="approved" class="tsd-anchor"></a>
+					<h3>approved</h3>
+					<div class="tsd-signature tsd-kind-icon">approved<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in services/admin.ts:39</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 					<a name="createtime" class="tsd-anchor"></a>
 					<h3>create<wbr>Time</h3>
 					<div class="tsd-signature tsd-kind-icon">create<wbr>Time<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in services/userStatusChange.ts:15</li>
+							<li>Defined in services/admin.ts:40</li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="id" class="tsd-anchor"></a>
-					<h3>id</h3>
-					<div class="tsd-signature tsd-kind-icon">id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<a name="location" class="tsd-anchor"></a>
+					<h3>location</h3>
+					<div class="tsd-signature tsd-kind-icon">location<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in services/userStatusChange.ts:12</li>
+							<li>Defined in services/admin.ts:35</li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="newstatusid" class="tsd-anchor"></a>
-					<h3>new<wbr>StatusID</h3>
-					<div class="tsd-signature tsd-kind-icon">new<wbr>StatusID<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<a name="postid" class="tsd-anchor"></a>
+					<h3>postID</h3>
+					<div class="tsd-signature tsd-kind-icon">postID<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in services/userStatusChange.ts:14</li>
+							<li>Defined in services/admin.ts:34</li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="userid" class="tsd-anchor"></a>
-					<h3>userID</h3>
-					<div class="tsd-signature tsd-kind-icon">userID<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<a name="postuser" class="tsd-anchor"></a>
+					<h3>post<wbr>User</h3>
+					<div class="tsd-signature tsd-kind-icon">post<wbr>User<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in services/userStatusChange.ts:13</li>
+							<li>Defined in services/admin.ts:36</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="program" class="tsd-anchor"></a>
+					<h3>program</h3>
+					<div class="tsd-signature tsd-kind-icon">program<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in services/admin.ts:37</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="rating" class="tsd-anchor"></a>
+					<h3>rating</h3>
+					<div class="tsd-signature tsd-kind-icon">rating<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in services/admin.ts:38</li>
 						</ul>
 					</aside>
 				</section>
@@ -157,31 +201,43 @@
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
 					<li class=" tsd-kind-class tsd-parent-kind-module root">
-						<a href="../classes/services_userstatuschange.userstatuschangeservice.html" class="tsd-kind-icon">User<wbr>Status<wbr>Change<wbr>Service</a>
+						<a href="../classes/services_admin.adminservice.html" class="tsd-kind-icon">Admin<wbr>Service</a>
 					</li>
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-interface tsd-parent-kind-module root">
-						<a href="services_userstatuschange.userstatuschange.html" class="tsd-kind-icon">User<wbr>Status<wbr>Change</a>
+						<a href="services_admin.adminpost.html" class="tsd-kind-icon">Admin<wbr>Post</a>
 						<ul>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="services_userstatuschange.userstatuschange.html#createtime" class="tsd-kind-icon">create<wbr>Time</a>
+								<a href="services_admin.adminpost.html#adminfavorite" class="tsd-kind-icon">admin<wbr>Favorite</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="services_userstatuschange.userstatuschange.html#id" class="tsd-kind-icon">id</a>
+								<a href="services_admin.adminpost.html#approved" class="tsd-kind-icon">approved</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="services_userstatuschange.userstatuschange.html#newstatusid" class="tsd-kind-icon">new<wbr>StatusID</a>
+								<a href="services_admin.adminpost.html#createtime" class="tsd-kind-icon">create<wbr>Time</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="services_userstatuschange.userstatuschange.html#userid" class="tsd-kind-icon">userID</a>
+								<a href="services_admin.adminpost.html#location" class="tsd-kind-icon">location</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="services_admin.adminpost.html#postid" class="tsd-kind-icon">postID</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="services_admin.adminpost.html#postuser" class="tsd-kind-icon">post<wbr>User</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="services_admin.adminpost.html#program" class="tsd-kind-icon">program</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="services_admin.adminpost.html#rating" class="tsd-kind-icon">rating</a>
 							</li>
 						</ul>
 					</li>
 				</ul>
 				<ul class="after-current">
 					<li class=" tsd-kind-interface tsd-parent-kind-module root">
-						<a href="services_userstatuschange.userstatuschangerequest.html" class="tsd-kind-icon">User<wbr>Status<wbr>Change<wbr>Request</a>
+						<a href="services_admin.adminuser.html" class="tsd-kind-icon">Admin<wbr>User</a>
 					</li>
 				</ul>
 			</nav>
