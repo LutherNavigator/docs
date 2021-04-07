@@ -118,6 +118,8 @@
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="services_postvote.postvoteservice.html#deletepostvotes" class="tsd-kind-icon">delete<wbr>Post<wbr>Votes</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="services_postvote.postvoteservice.html#deleteuservotes" class="tsd-kind-icon">delete<wbr>User<wbr>Votes</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="services_postvote.postvoteservice.html#getnumpostvotes" class="tsd-kind-icon">get<wbr>Num<wbr>Post<wbr>Votes</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="services_postvote.postvoteservice.html#getpostvotetype" class="tsd-kind-icon">get<wbr>Post<wbr>Vote<wbr>Type</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="services_postvote.postvoteservice.html#getpostvotes" class="tsd-kind-icon">get<wbr>Post<wbr>Votes</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="services_postvote.postvoteservice.html#getuservotes" class="tsd-kind-icon">get<wbr>User<wbr>Votes</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="services_postvote.postvoteservice.html#getvote" class="tsd-kind-icon">get<wbr>Vote</a></li>
@@ -183,7 +185,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in services/postVote.ts:146</li>
+									<li>Defined in services/postVote.ts:196</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography tsd-comment-shorttext">
@@ -214,7 +216,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in services/postVote.ts:135</li>
+									<li>Defined in services/postVote.ts:185</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography tsd-comment-shorttext">
@@ -236,6 +238,82 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="getnumpostvotes" class="tsd-anchor"></a>
+					<h3>get<wbr>Num<wbr>Post<wbr>Votes</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Num<wbr>Post<wbr>Votes<span class="tsd-signature-symbol">(</span>postID<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, voteType<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in services/postVote.ts:169</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography tsd-comment-shorttext">
+								<div class="lead">
+									<p>Get the number of votes a post has of a given vote type.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>postID: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography tsd-comment-text">
+										<p>A post&#39;s ID.</p>
+									</div>
+								</li>
+								<li>
+									<h5>voteType: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography tsd-comment-text">
+										<p>The type of vote.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<p>The number of votes a post has of the given vote type.</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="getpostvotetype" class="tsd-anchor"></a>
+					<h3>get<wbr>Post<wbr>Vote<wbr>Type</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Post<wbr>Vote<wbr>Type<span class="tsd-signature-symbol">(</span>userID<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, postID<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in services/postVote.ts:151</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography tsd-comment-shorttext">
+								<div class="lead">
+									<p>Get the type of vote a user has made on a post.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>userID: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography tsd-comment-text">
+										<p>A user&#39;s ID.</p>
+									</div>
+								</li>
+								<li>
+									<h5>postID: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography tsd-comment-text">
+										<p>A post&#39;s ID.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<p>The type of vote the user made on the post.</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
 					<a name="getpostvotes" class="tsd-anchor"></a>
 					<h3>get<wbr>Post<wbr>Votes</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
@@ -245,7 +323,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in services/postVote.ts:122</li>
+									<li>Defined in services/postVote.ts:136</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography tsd-comment-shorttext">
@@ -277,7 +355,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in services/postVote.ts:108</li>
+									<li>Defined in services/postVote.ts:122</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography tsd-comment-shorttext">
@@ -309,7 +387,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in services/postVote.ts:82</li>
+									<li>Defined in services/postVote.ts:96</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography tsd-comment-shorttext">
@@ -347,7 +425,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in services/postVote.ts:95</li>
+									<li>Defined in services/postVote.ts:109</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography tsd-comment-shorttext">
@@ -370,7 +448,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in services/postVote.ts:54</li>
+									<li>Defined in services/postVote.ts:68</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography tsd-comment-shorttext">
@@ -407,7 +485,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in services/postVote.ts:30</li>
+									<li>Defined in services/postVote.ts:44</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography tsd-comment-shorttext">
@@ -450,7 +528,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in services/postVote.ts:67</li>
+									<li>Defined in services/postVote.ts:81</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography tsd-comment-shorttext">
@@ -500,6 +578,12 @@
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="services_postvote.postvoteservice.html#deleteuservotes" class="tsd-kind-icon">delete<wbr>User<wbr>Votes</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="services_postvote.postvoteservice.html#getnumpostvotes" class="tsd-kind-icon">get<wbr>Num<wbr>Post<wbr>Votes</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="services_postvote.postvoteservice.html#getpostvotetype" class="tsd-kind-icon">get<wbr>Post<wbr>Vote<wbr>Type</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="services_postvote.postvoteservice.html#getpostvotes" class="tsd-kind-icon">get<wbr>Post<wbr>Votes</a>
