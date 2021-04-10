@@ -183,13 +183,13 @@
 					<a name="createpost" class="tsd-anchor"></a>
 					<h3>create<wbr>Post</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">create<wbr>Post<span class="tsd-signature-symbol">(</span>userID<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, content<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, imageData<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Buffer</span><span class="tsd-signature-symbol">[]</span>, location<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, locationTypeID<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, programID<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, rating<span class="tsd-signature-symbol">: </span><a href="../interfaces/services_rating.ratingparams.html" class="tsd-signature-type">RatingParams</a>, threeWords<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, address<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span>, phone<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span>, website<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">create<wbr>Post<span class="tsd-signature-symbol">(</span>userID<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, content<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, imageData<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Buffer</span><span class="tsd-signature-symbol">[]</span>, location<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, city<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, country<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, locationTypeID<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, programID<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, rating<span class="tsd-signature-symbol">: </span><a href="../interfaces/services_rating.ratingparams.html" class="tsd-signature-type">RatingParams</a>, threeWords<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, address<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span>, phone<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span>, website<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in services/post.ts:117</li>
+									<li>Defined in services/post.ts:123</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography tsd-comment-shorttext">
@@ -221,6 +221,18 @@
 									<h5>location: <span class="tsd-signature-type">string</span></h5>
 									<div class="tsd-comment tsd-typography tsd-comment-text">
 										<p>The post&#39;s location.</p>
+									</div>
+								</li>
+								<li>
+									<h5>city: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography tsd-comment-text">
+										<p>The location&#39;s city.</p>
+									</div>
+								</li>
+								<li>
+									<h5>country: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography tsd-comment-text">
+										<p>The location&#39;s country.</p>
 									</div>
 								</li>
 								<li>
@@ -281,7 +293,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in services/post.ts:199</li>
+									<li>Defined in services/post.ts:211</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography tsd-comment-shorttext">
@@ -312,7 +324,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in services/post.ts:275</li>
+									<li>Defined in services/post.ts:287</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography tsd-comment-shorttext">
@@ -343,7 +355,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in services/post.ts:186</li>
+									<li>Defined in services/post.ts:198</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography tsd-comment-shorttext">
@@ -375,7 +387,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in services/post.ts:305</li>
+									<li>Defined in services/post.ts:317</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography tsd-comment-shorttext">
@@ -407,7 +419,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in services/post.ts:331</li>
+									<li>Defined in services/post.ts:343</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography tsd-comment-shorttext">
@@ -439,7 +451,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in services/post.ts:239</li>
+									<li>Defined in services/post.ts:251</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography tsd-comment-shorttext">
@@ -471,7 +483,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in services/post.ts:222</li>
+									<li>Defined in services/post.ts:234</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography tsd-comment-shorttext">
@@ -503,7 +515,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in services/post.ts:383</li>
+									<li>Defined in services/post.ts:395</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography tsd-comment-shorttext">
@@ -526,7 +538,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in services/post.ts:256</li>
+									<li>Defined in services/post.ts:268</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography tsd-comment-shorttext">
@@ -558,7 +570,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in services/post.ts:355</li>
+									<li>Defined in services/post.ts:367</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography tsd-comment-shorttext">
@@ -590,7 +602,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in services/post.ts:172</li>
+									<li>Defined in services/post.ts:184</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography tsd-comment-shorttext">
@@ -622,7 +634,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in services/post.ts:369</li>
+									<li>Defined in services/post.ts:381</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography tsd-comment-shorttext">
@@ -659,7 +671,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in services/post.ts:319</li>
+									<li>Defined in services/post.ts:331</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography tsd-comment-shorttext">
@@ -696,7 +708,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in services/post.ts:342</li>
+									<li>Defined in services/post.ts:354</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography tsd-comment-shorttext">
