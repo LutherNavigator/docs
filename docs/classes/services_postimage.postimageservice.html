@@ -118,6 +118,7 @@
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="services_postimage.postimageservice.html#createpostimage" class="tsd-kind-icon">create<wbr>Post<wbr>Image</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="services_postimage.postimageservice.html#createpostimages" class="tsd-kind-icon">create<wbr>Post<wbr>Images</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="services_postimage.postimageservice.html#deletepostimage" class="tsd-kind-icon">delete<wbr>Post<wbr>Image</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="services_postimage.postimageservice.html#deletepostimages" class="tsd-kind-icon">delete<wbr>Post<wbr>Images</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="services_postimage.postimageservice.html#getpostimages" class="tsd-kind-icon">get<wbr>Post<wbr>Images</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="services_postimage.postimageservice.html#numimages" class="tsd-kind-icon">num<wbr>Images</a></li>
@@ -243,6 +244,44 @@
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></h4>
 							<p>The IDs of the new images.</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="deletepostimage" class="tsd-anchor"></a>
+					<h3>delete<wbr>Post<wbr>Image</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">delete<wbr>Post<wbr>Image<span class="tsd-signature-symbol">(</span>postID<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, index<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in services/postImage.ts:156</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography tsd-comment-shorttext">
+								<div class="lead">
+									<p>Delete a specific image from a post.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>postID: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography tsd-comment-text">
+										<p>A post&#39;s ID.</p>
+									</div>
+								</li>
+								<li>
+									<h5>index: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography tsd-comment-text">
+										<p>The index of the post&#39;s image.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<p>Whether or not the deletion succeeded.</p>
 						</li>
 					</ul>
 				</section>
@@ -400,6 +439,9 @@
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="services_postimage.postimageservice.html#createpostimages" class="tsd-kind-icon">create<wbr>Post<wbr>Images</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="services_postimage.postimageservice.html#deletepostimage" class="tsd-kind-icon">delete<wbr>Post<wbr>Image</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="services_postimage.postimageservice.html#deletepostimages" class="tsd-kind-icon">delete<wbr>Post<wbr>Images</a>
