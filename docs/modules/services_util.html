@@ -95,6 +95,7 @@
 							<h3>Variables</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-variable tsd-parent-kind-module"><a href="services_util.html#dburl" class="tsd-kind-icon">dbURL</a></li>
+								<li class="tsd-kind-variable tsd-parent-kind-module"><a href="services_util.html#emailchangeidlength" class="tsd-kind-icon">email<wbr>ChangeIDLength</a></li>
 								<li class="tsd-kind-variable tsd-parent-kind-module"><a href="services_util.html#idlength" class="tsd-kind-icon">id<wbr>Length</a></li>
 								<li class="tsd-kind-variable tsd-parent-kind-module"><a href="services_util.html#passwordresetidlength" class="tsd-kind-icon">password<wbr>ResetIDLength</a></li>
 								<li class="tsd-kind-variable tsd-parent-kind-module"><a href="services_util.html#sessionidlength" class="tsd-kind-icon">sessionIDLength</a></li>
@@ -110,6 +111,8 @@
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="services_util.html#hashpasswordasync" class="tsd-kind-icon">hash<wbr>Password<wbr>Async</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="services_util.html#newid" class="tsd-kind-icon">newID</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="services_util.html#newuniqueid" class="tsd-kind-icon">new<wbr>UniqueID</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="services_util.html#pruneemailchangerecord" class="tsd-kind-icon">prune<wbr>Email<wbr>Change<wbr>Record</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="services_util.html#pruneemailchangerecords" class="tsd-kind-icon">prune<wbr>Email<wbr>Change<wbr>Records</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="services_util.html#prunepasswordresetrecord" class="tsd-kind-icon">prune<wbr>Password<wbr>Reset<wbr>Record</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="services_util.html#prunepasswordresetrecords" class="tsd-kind-icon">prune<wbr>Password<wbr>Reset<wbr>Records</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="services_util.html#prunesession" class="tsd-kind-icon">prune<wbr>Session</a></li>
@@ -138,6 +141,21 @@
 					<div class="tsd-comment tsd-typography tsd-comment-shorttext">
 						<div class="lead">
 							<p>Database connection URL.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-module">
+					<a name="emailchangeidlength" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> email<wbr>ChangeIDLength</h3>
+					<div class="tsd-signature tsd-kind-icon">email<wbr>ChangeIDLength<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">"16"</span><span class="tsd-signature-symbol"> = 16</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in services/util.ts:39</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography tsd-comment-shorttext">
+						<div class="lead">
+							<p>Length of an email change ID.</p>
 						</div>
 					</div>
 				</section>
@@ -214,7 +232,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in services/util.ts:224</li>
+									<li>Defined in services/util.ts:237</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography tsd-comment-shorttext">
@@ -252,7 +270,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in services/util.ts:97</li>
+									<li>Defined in services/util.ts:110</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography tsd-comment-shorttext">
@@ -275,7 +293,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in services/util.ts:203</li>
+									<li>Defined in services/util.ts:216</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography tsd-comment-shorttext">
@@ -319,7 +337,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in services/util.ts:180</li>
+									<li>Defined in services/util.ts:193</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography tsd-comment-shorttext">
@@ -357,7 +375,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in services/util.ts:132</li>
+									<li>Defined in services/util.ts:145</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography tsd-comment-shorttext">
@@ -389,7 +407,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in services/util.ts:155</li>
+									<li>Defined in services/util.ts:168</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography tsd-comment-shorttext">
@@ -424,6 +442,80 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+					<a name="pruneemailchangerecord" class="tsd-anchor"></a>
+					<h3>prune<wbr>Email<wbr>Change<wbr>Record</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+						<li class="tsd-signature tsd-kind-icon">prune<wbr>Email<wbr>Change<wbr>Record<span class="tsd-signature-symbol">(</span>dbm<span class="tsd-signature-symbol">: </span><a href="../classes/services.default.html" class="tsd-signature-type">default</a>, emailChangeID<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, timeRemaining<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in services/util.ts:441</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography tsd-comment-shorttext">
+								<div class="lead">
+									<p>Delete an email change record when the time comes.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>dbm: <a href="../classes/services.default.html" class="tsd-signature-type">default</a></h5>
+									<div class="tsd-comment tsd-typography tsd-comment-text">
+										<p>The database manager.</p>
+									</div>
+								</li>
+								<li>
+									<h5>emailChangeID: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography tsd-comment-text">
+										<p>An email change ID.</p>
+									</div>
+								</li>
+								<li>
+									<h5>timeRemaining: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = null</span></h5>
+									<div class="tsd-comment tsd-typography tsd-comment-text">
+										<p>The amount of time to wait before removing the record.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+					<a name="pruneemailchangerecords" class="tsd-anchor"></a>
+					<h3>prune<wbr>Email<wbr>Change<wbr>Records</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+						<li class="tsd-signature tsd-kind-icon">prune<wbr>Email<wbr>Change<wbr>Records<span class="tsd-signature-symbol">(</span>dbm<span class="tsd-signature-symbol">: </span><a href="../classes/services.default.html" class="tsd-signature-type">default</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in services/util.ts:463</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography tsd-comment-shorttext">
+								<div class="lead">
+									<p>Delete all active email change records when the time comes.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>dbm: <a href="../classes/services.default.html" class="tsd-signature-type">default</a></h5>
+									<div class="tsd-comment tsd-typography tsd-comment-text">
+										<p>The database manager.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
 					<a name="prunepasswordresetrecord" class="tsd-anchor"></a>
 					<h3>prune<wbr>Password<wbr>Reset<wbr>Record</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
@@ -433,7 +525,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in services/util.ts:345</li>
+									<li>Defined in services/util.ts:358</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography tsd-comment-shorttext">
@@ -476,7 +568,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in services/util.ts:367</li>
+									<li>Defined in services/util.ts:380</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography tsd-comment-shorttext">
@@ -507,7 +599,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in services/util.ts:246</li>
+									<li>Defined in services/util.ts:259</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography tsd-comment-shorttext">
@@ -550,7 +642,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in services/util.ts:279</li>
+									<li>Defined in services/util.ts:292</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography tsd-comment-shorttext">
@@ -581,7 +673,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in services/util.ts:391</li>
+									<li>Defined in services/util.ts:404</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography tsd-comment-shorttext">
@@ -624,7 +716,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in services/util.ts:412</li>
+									<li>Defined in services/util.ts:425</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography tsd-comment-shorttext">
@@ -655,7 +747,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in services/util.ts:301</li>
+									<li>Defined in services/util.ts:314</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography tsd-comment-shorttext">
@@ -698,7 +790,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in services/util.ts:323</li>
+									<li>Defined in services/util.ts:336</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography tsd-comment-shorttext">
@@ -729,7 +821,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in services/util.ts:108</li>
+									<li>Defined in services/util.ts:121</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography tsd-comment-shorttext">
@@ -793,6 +885,9 @@
 						<a href="services_util.html#dburl" class="tsd-kind-icon">dbURL</a>
 					</li>
 					<li class=" tsd-kind-variable tsd-parent-kind-module root">
+						<a href="services_util.html#emailchangeidlength" class="tsd-kind-icon">email<wbr>ChangeIDLength</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-module root">
 						<a href="services_util.html#idlength" class="tsd-kind-icon">id<wbr>Length</a>
 					</li>
 					<li class=" tsd-kind-variable tsd-parent-kind-module root">
@@ -821,6 +916,12 @@
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module root">
 						<a href="services_util.html#newuniqueid" class="tsd-kind-icon">new<wbr>UniqueID</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-module root">
+						<a href="services_util.html#pruneemailchangerecord" class="tsd-kind-icon">prune<wbr>Email<wbr>Change<wbr>Record</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-module root">
+						<a href="services_util.html#pruneemailchangerecords" class="tsd-kind-icon">prune<wbr>Email<wbr>Change<wbr>Records</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module root">
 						<a href="services_util.html#prunepasswordresetrecord" class="tsd-kind-icon">prune<wbr>Password<wbr>Reset<wbr>Record</a>
